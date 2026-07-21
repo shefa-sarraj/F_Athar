@@ -1,0 +1,155 @@
+html {
+    font-size: 16px;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Lyon';
+    src: url('../font/arfonts-lyon-arabic-display_all/lyon-arabic-display-regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Lyon';
+    src: url('../font/arfonts-lyon-arabic-display_all/lyon-arabic-display-medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Lyon';
+    src: url('../font/arfonts-lyon-arabic-display_all/lyon-arabic-display-bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+/* Black */
+@font-face {
+    font-family: 'Lyon';
+    src: url('../font/arfonts-lyon-arabic-display_all/lyon-arabic-display-black.otf') format('opentype');
+    font-weight: 900;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Lyon';
+    src: url('../font/arfonts-lyon-arabic-display_all/lyon-arabic-display-light.otf') format('opentype');
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lyon', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+    /* استبدلي path/to/your/image.jpg بمسار الصورة الحقيقي */
+    background-image: url('../media/bg_brawser.jpg'); 
+    
+    /* لجعل الصورة تغطي كامل الشاشة */
+    background-size: cover; 
+
+    /* لمنع تكرار الصورة إذا كانت صغيرة */
+    background-repeat: no-repeat; 
+    
+    /* لضمان أن الخلفية تغطي كامل طول الصفحة */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 24px auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f7;
+    border-radius:8px;
+}
+
+.logo img {
+    height:65px;
+    width:90px;
+}
+
+.navbarr ul {
+    display: flex;
+    list-style: none;
+    gap: 120px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.navbarr ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* header nav ul li a.active {
+    color: #b02323;
+} */
+
+.btn-contact {
+    background-color:#b1151c;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    width:208PX;
+    height: 55PX;
+    border-radius:8px;
+    text-decoration: none;
+    display: flex;          /* تحويل الزر لبيئة فليكس */
+    justify-content: center; /* توازنه أفقياً */
+    align-items: center;     /* توازنه عمودياً */
+}
+.btn-contact:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* لترتيب الصفوف تحت بعض */
+    align-items: center;    /* لتوسيط كل شيء في منتصف الصفحة */
+    padding: 40px 0;
+    gap: 12px;             /* مسافة بين الصف العلوي وصف الحقوق */
+}
+.footer-top{
+    display: flex;
+    align-items: center;    /* محاذاة اللوجو مع الكلام عمودياً */
+    justify-content: center;/* توسيطهم في نص الصفحة */
+    gap: 80px;             /* المسافة بين اللوجو والقائمة */
+    flex-wrap: wrap;        /* لضمان التجاوب مع الشاشات الصغيرة */
+}
+
+.social-links {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+footer p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
